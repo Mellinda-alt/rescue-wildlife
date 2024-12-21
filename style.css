@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 4rem;
+    
+}
+
+html::-webkit-scrollbar{
+    width: 1rem;
+
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: var(--main);
+    border-radius: 5rem;
+}
+
+
+
+.header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    background: var(--white);
+    box-shadow: var(--box-shadow);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+}
+
+.header .logo{
+    font-size: 3.5rem;
+    font-weight: bolder;
+    color: #006A4E;
+}
+
+.header .logo i{
+    color: #568203;
+}
+
+.header .navbar a{
+    font-size: 3.5rem;
+    color: #006A4E;
+    margin: 0 1rem;
+}
+
+.header .navbar a:hover{
+    color: #c59058;
+}
+
+
+.about .vis{
+    padding: 80px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.about .vis h1{
+    color: #006A4E;
+    font-size: 30px;
+    line-height: 1,4;
+    font-weight: 100;
+}
+
+img{
+    width: 500px;
+    padding-top: 350px;
+}
+
+img:hover{
+    transform: scale(1.05);
+    transition: 0.2s;
+
+}
+
+#myvideo {
+    width: 100vw;
+    height: 100vh;
+    object-fit: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+ }
+
+h1, h2 {
+    color: white;
+    font-family: Trebuchet MS;
+    font-weight: bold; text-align: center;
+ }
+
+ @keyframes slide-in {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  h1, h2 {
+    animation: slide-in 900ms;
+    animation-timing-function:linear;
+  }
+ 
+ h1 {
+    font-size: 6rem;
+    margin-top: 30vh;
+ }
+ 
+ h2 {
+    font-size: 3rem;
+ }
+
+ h3{
+    font-size: 40px;
+    font-weight: 200;
+    text-align: center;
+    text-decoration: underline;
+    
+ }
+
+
+
+ #btn {
+    background-color: #1a3f2b; /* Equivalent to bg-green-900 */
+    color: white; /* Equivalent to text-white */
+    padding: 0.75rem 1.5rem; /* Equivalent to py-3 px-6 */
+    border-radius: 0.5rem; /* Equivalent to rounded-lg */
+    font-weight: 600; /* Equivalent to font-semibold */
+    font-size: 40px; /* Equivalent to text-sm */
+    transition: background-color 0.3s; /* Equivalent to transition duration-300 */
+}
+
+/* Media query for small screens and above */
+@media (min-width: 640px) {
+    #btn {
+        padding: 1rem 2rem; /* Equivalent to sm:py-4 sm:px-8 */
+        font-size: 1.125rem; /* Equivalent to sm:text-lg */
+    }
+}
+
+/* Hover effect */
+#btn:hover {
+    background-color: #2c6e4f; /* Equivalent to hover:bg-green-700 */
+}
+
+#search {
+    display: flex; 
+    align-items: center;
+    margin: 20px; 
+}
+
+#search input[type="text"] {
+    width: 300px; /* Set a width for the input */
+    padding: 10px; /* Add padding for better spacing */
+    border: 2px solid #006A4E; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1.5rem; /* Font size */
+    color: #333; /* Text color */
+    transition: border-color 0.3s; /* Smooth transition for border color */
+}
+
+#search input[type="text"]:focus {
+    border-color: #c59058; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+#search button {
+    padding: 10px 15px; /* Padding for the button */
+    background-color: #1a3f2b; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1.5rem; /* Font size */
+    cursor: pointer; /* Change cursor to pointer */
+    margin-left: 10px; /* Space between input and button */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+#search button:hover {
+    background-color: #2c6e4f; /* Change background color on hover */
+}
+.card{
+    max-width: 700px;
+    margin: 0 auto;
+}
+.card_animal{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    background-color: #568203;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.card_animal_photo{
+    order: 1;
+    grid-row: 1;
+}
+
+.card_animal_photo img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.card_text{
+    padding: 20px 25px;
+}
+
+.card_text h3{
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-size: 1.8rem;
+}
+
+.card_text p {
+    margin: 0.8rem 0;
+    padding: 0;
+    line-height: 1.5;
+
+}
+
+.primary_btn{
+    background: linear-gradient(yellow pink) ;
+    padding: 10px;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.footer{
+    background: url(/images/istockphoto-478924237-1024x1024.jpg) no-repeat;
+    background-size: cover;
+    padding: 3rem 7%;
+
+}
+
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem,1fr));
+    gap: 1.5rem;
+}
+
+.footer .box-container .box h3{
+    font-size: 2.5rem;
+    color: var(--main);
+    padding: 1rem 0;
+}
+
+.footer .box-container .box p{
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: var(--main);
+    padding: 1rem 0;
+
+}
+
+.footer .box-container .box .links{
+    display: block;
+    font-size: 1.5rem;
+    color: var(--white);
+    padding: 1rem 0;
+}
+
+.footer .box-container .box .links i{
+    color: var(--main);
+    padding-right: .5rem;
+
+}
+
+.footer .box-container .box .links:hover i{
+    padding-right: 2rem;
+}
+#careersModalLabel{
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+#app{
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+#name{
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+#email{
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+#resume{
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .box-container .box .days{
+    margin-left: 2.2rem;
+    line-height: .2;
+
+}
+
+.footer .box-container .box .email{
+    width: 100%;
+    margin: .7rem 0;
+    padding: 1rem;
+    border-radius: .5rem;
+    background: var(--white);
+    font-size: 1.6rem;
+    color: var(--black);
+    text-transform: none;
+}
+
+.footer .box-container .box .share a{
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    color: var(--black);
+    background:var(--white);
+    font-size: 1.2rem;
+    border-radius: 5rem;
+    margin-right: .8rem;
+    text-align: center;
+    margin-top: 1.4rem;
+}
+
+.footer .box-container .box .share a:hover{
+    background: #1a3f2b;
+}
+
+.footer .credit{
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 2.5rem;
+    color: var(--black);
+    border-top: .2rem solid rgba(0,0, 0, 0.2);
+}
+
+.footer .credit .link{
+    color: var(--main);
+}

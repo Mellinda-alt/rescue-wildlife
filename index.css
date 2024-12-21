@@ -1,0 +1,47 @@
+/* display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem;
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: var(--box-shadow);
+    margin: 2rem;
+    position: relative;
+    z-index: 0;
+    transform: translate(-50%,-50%); */
+
+
+
+    /* @keyframes slide{
+        0%{
+            transform: translateX(0);
+        }
+        25%{
+            transform: translateX(0);
+        }
+        30%{
+            transform: translateX(-100%);
+        }
+        50%{
+            transform: translateX(-100%);
+        }
+        55%{
+            transform: translateX(-200%);
+        }
+        75%{
+            transform: translateX(-200%);
+        }
+        80%{
+            transform: translateX(-300%);
+        }
+        100%{
+            transform: translateX(-300%);
+        }
+    } */
+
+
+    /* animation: slide 16s infinite; */
+
+
+
+    bg-green-900 text-white py-3 px-6 sm:py-4 sm:px-8 rounded-lg hover:bg-green-700 transition duration-300 text-sm sm:text-lg font-semibold

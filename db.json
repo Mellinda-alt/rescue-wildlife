@@ -1,0 +1,135 @@
+{
+  "animals": [
+    {
+      "id": 1,
+      "name": "Lion",
+      "species": "Panthera leo",
+      "family": "Felidae",
+      "habitat": "Grasslands and Savannas",
+      "place_of_found": "Africa",
+      "diet": "Carnivore",
+      "description": "The lion is a large and powerful wild cat known for its majestic appearance and social behavior.",
+      "weight_kg": 190,
+      "height_cm": 120,
+      "image": "https://cdn.pixabay.com/photo/2024/08/10/04/40/beetle-8958489_640.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Elephant",
+      "species": "Loxodonta africana",
+      "family": "Elephantidae",
+      "habitat": "Savannas, Grasslands, and Forests",
+      "place_of_found": "Africa, Asia",
+      "diet": "Herbivore",
+      "description": "The elephant is the largest land animal on Earth and is known for its intelligence and long trunk.",
+      "weight_kg": 6000,
+      "height_cm": 300,
+      "image": "https://cdn.pixabay.com/photo/2024/11/27/05/42/ai-generated-9227230_640.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Tiger",
+      "species": "Panthera tigris",
+      "family": "Felidae",
+      "habitat": "Forests, Grasslands, and Swamps",
+      "place_of_found": "Asia",
+      "diet": "Carnivore",
+      "description": "The tiger is a powerful predator with striking orange fur and black stripes.",
+      "weight_kg": 250,
+      "height_cm": 100,
+      "image": "https://cdn.pixabay.com/photo/2022/11/18/17/50/insect-7600618_640.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Kangaroo",
+      "species": "Macropus",
+      "family": "Macropodidae",
+      "habitat": "Forests, Grasslands, and Deserts",
+      "place_of_found": "Australia",
+      "diet": "Herbivore",
+      "description": "Kangaroos are marsupials known for their powerful hind legs and pouches.",
+      "weight_kg": 85,
+      "height_cm": 150,
+      "image": "https://cdn.pixabay.com/photo/2023/10/23/16/24/bird-8336436_640.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Gorilla",
+      "species": "Gorilla beringei",
+      "family": "Hominidae",
+      "habitat": "Forests and Mountains",
+      "place_of_found": "Africa",
+      "diet": "Herbivore",
+      "description": "Gorillas are large and powerful primates known for their intelligence and social structure.",
+      "weight_kg": 180,
+      "height_cm": 160,
+      "image": "https://media.istockphoto.com/id/1458215547/photo/brown-bear.jpg?s=1024x1024&w=is&k=20&c=R2zXwSRYnLX2kZt7qBUBW1eLhWL3gamnkN6HE_S2Awk="
+    },
+    {
+      "id": 6,
+      "name": "Polar Bear",
+      "species": "Ursus maritimus",
+      "family": "Ursidae",
+      "habitat": "Arctic Region",
+      "place_of_found": "Arctic",
+      "diet": "Carnivore",
+      "description": "Polar bears are large carnivorous mammals adapted to life in the Arctic and primarily feed on seals.",
+      "weight_kg": 500,
+      "height_cm": 130,
+      "image": "https://media.istockphoto.com/id/2072383284/photo/a-red-fox-kit-nuzzles-its-mom-close-to-sunset.jpg?s=1024x1024&w=is&k=20&c=JfYSB0wBBzSE_aM8HJKwRQSACHJ6fVxJycIpRH2kPf4="
+    },
+    {
+      "id": 7,
+      "name": "Koala",
+      "species": "Phascolarctos cinereus",
+      "family": "Phascolarctidae",
+      "habitat": "Eucalyptus Forests",
+      "place_of_found": "Australia",
+      "diet": "Herbivore",
+      "description": "Koalas are arboreal marsupials known for their love of eucalyptus leaves.",
+      "weight_kg": 12,
+      "height_cm": 60,
+      "image": "https://cdn.pixabay.com/photo/2023/11/02/10/19/bird-8360220_960_720.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Giraffe",
+      "species": "Giraffa camelopardalis",
+      "family": "Giraffidae",
+      "habitat": "Savannas and Grasslands",
+      "place_of_found": "Africa",
+      "diet": "Herbivore",
+      "description": "Giraffes are the tallest land animals and have long necks and legs.",
+      "weight_kg": 800,
+      "height_cm": 550,
+      "image": "https://cdn.pixabay.com/photo/2023/02/28/03/42/ibex-7819817_640.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Panda",
+      "species": "Ailuropoda melanoleuca",
+      "family": "Ursidae",
+      "habitat": "Bamboo Forests",
+      "place_of_found": "China",
+      "diet": "Herbivore",
+      "description": "Pandas are bears known for their distinctive black and white markings and love for bamboo.",
+      "weight_kg": 85,
+      "height_cm": 90,
+      "image": "https://cdn.pixabay.com/photo/2023/09/04/07/56/lemur-8232231_640.png"
+    },
+    {
+      "id": 10,
+      "name": "Cheetah",
+      "species": "Acinonyx jubatus",
+      "family": "Felidae",
+      "habitat": "Grasslands and Savannas",
+      "place_of_found": "Africa",
+      "diet": "Carnivore",
+      "description": "Cheetahs are the fastest land animals and have slender bodies built for speed.",
+      "weight_kg": 50,
+      "height_cm": 80,
+      "image": "https://cdn.pixabay.com/photo/2023/09/09/09/03/cheetah-8242729_640.png"
+    }
+  ]
+}
+    

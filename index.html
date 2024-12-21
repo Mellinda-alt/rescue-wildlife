@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rescue Wildlife</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo"> <i class="fa-solid fa-paw"></i> Wildlife</a>
+      <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#career" data-toggle="modal" id="career" data-target="#careersModal">career</a>
+</div>
+
+        <a href="#donate">donate</a>
+        <a href="#live">live</a>
+        
+      </nav>
+   </header>
+
+    <section class="home" id="home">
+        <div class="vid">
+            <video id="myvideo" autoplay loop muted>
+                <source src="/videos/458134_Lion_Lions_1920x1080.mp4" type="video/mp4">
+            </video>
+            <h1>Rescue Wildlife</h1>
+            <h2>Explore</h2>
+        </div>
+    </section>
+    <br>             
+    <section class="about" id="about">
+        
+        <div class="vis">
+          
+          
+            <h1>
+                Our vision is of an Africa where sustainable development includes <br> thriving wildlife and wild lands as a cultural and economic<br> asset for Africa’s future generations.
+            </h1>
+            <div class="img">
+                <img src="/images/david-clode-AtCChdVhAmA-unsplash.jpg"/>
+            </div>
+        </div>
+    </section>
+
+   <!-- <section class="live" id="live">
+     <h3>Animals</h3>
+   </section> -->
+
+   <div class="card"></div>
+   <template id="card_animal">
+      <div class="card_animal">
+        <div class="card_text">
+          <h3>Lion</h3>
+          <p class="species">species:Panthera leo</p>
+          <p class="family">family:Felidae</p>
+          <p class="habitat">habitat:Grasslands and Savannas</p>
+          <p class="found">place_of_found:Africa</p>
+          <p class="diet">diet:Carnivore</p>
+          <p class="description">description:The lion is a large and powerful wild cat known for its majestic appearance and social behavior.</p>
+          <p class="weight">weight_kg:190</p>
+          <p class="height">height_cm:120</p>
+          <a href="#" class="primary_btn">This Animals</a>
+        </div>
+        <div class="card_animal_photo">
+          <img src="https://cdn.pixabay.com/photo/2024/08/10/04/40/beetle-8958489_640.jpg" alt="a lion named simba">
+        </div>
+      </div>  
+   </template>
+
+   <!-- Careers Modal -->
+    <div class="modal fade" id="careersModal" tabindex="-1" aria-labelledby="careersModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="careersModalLabel">Careers at Wildlife</h5>
+                    <button type="button" class="close" id="close"data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ul id="jobList" class="list-group">
+                        <!-- Job list will be populated here -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Application Form Modal -->
+    <div class="modal fade" id="applicationModal" tabindex="-1" aria-labelledby="applicationModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="app">Career Application</h5>
+                    <button type="button" class="close" id="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="applicationForm">
+                        <div class="form-group">
+                            <label for="applicantName" id="name">Name</label>
+                            <input type="text" class="form-control" id="applicantName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="applicantEmail" id="email">Email</label>
+                            <input type="email" class="form-control" id="applicantEmail" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="applicantResume" id="resume">Resume</label>
+                            <input type="file" class="form-control" id="applicantResume" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Apply</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+   <script src="jave.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Example job list data
+            const jobs = [
+            { id: 1, title: 'Trained Professional' },
+                { id: 2, title: 'Trainee' },
+            ];
+
+            // Populate job list
+            const jobList = document.getElementById('jobList');
+            jobs.forEach(job => {
+                const jobItem = document.createElement('li');
+                jobItem.className = 'list-group-item';
+                jobItem.textContent = job.title;
+                jobItem.setAttribute('data-toggle', 'modal');
+                jobItem.setAttribute('data-target', '#applicationModal');
+                jobItem.setAttribute('data-job-id', job.id);
+                jobList.appendChild(jobItem);
+            });
+
+            // Handle job click to open application modal
+            $('#applicationModal').on('show.bs.modal', function(event) {
+                const button = $(event.relatedTarget);
+                const jobId = button.data('job-id');
+                const job = jobs.find(j => j.id === jobId);
+
+                const modal = $(this);
+                modal.find('.modal-title').text(`Apply for ${job.title}`);
+            });
+
+            // Handle application form submission
+            document.getElementById('applicationForm').addEventListener('submit', function(event) {
+                event.preventDefault();
+                alert('Application submitted successfully!');
+                $('#applicationModal').modal('hide');
+            });
+        });
+    </script>
+
+
+<section class="footer">
+  <div class="box-container">
+    <div class="box">
+      <h3><i class="fas fa-paw"></i>Rescue Wildlife</h3>
+      <p>Lets Keep Animals Save</p>
+      <p class="links"><i class="fa fas-clock"></i>Monday - Friday</p>
+      <p class="days">7:00AM - 11:00PM</p>
+    </div>
+
+    <div class="box">
+      <h3>Contact Info</h3>
+      <a href="#" class="links"><i class="fas fa-phone"></i>0745678234</a>
+      <a href="#" class="links"><i class="fas fa-phone"></i>0734523987</a>
+      <a href="#" class="links"><i class="fas fa-envelope"></i>info@rescuewildlife.com</a>
+      <a href="#" class="links"><i class="fas fa-map-marker-alt"></i>Nairobi,Kenya</a>
+    </div>
+
+    <div class="box">
+      <h3>Quick Links</h3>
+      <a href="#" class="links"><i class="fas fa-arrow-right"></i>home</a>
+      <a href="#" class="links"><i class="fas fa-arrow-right"></i>about</a>
+      <a href="#" class="links"><i class="fas fa-arrow-right"></i>career</a>
+      <a href="#" class="links"><i class="fas fa-arrow-right"></i>donate</a>
+      <a href="#" class="links"><i class="fas fa-arrow-right"></i>live</a>
+    </div>
+
+    <div class="box">
+      <h3>Newsletter</h3>
+      <p>Subscribe for latest updates</p>
+      <input type="email" placeholder="Your Email" class="email">
+      <a href="#" class="btn">Subscribe</a>
+      <div class="share">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="credit">&copy;2024 Rescue Wildlife. All rights reserved by <a href="#" class="">Mel</a></div>
+</section>
+ </body>
+
+</html>
